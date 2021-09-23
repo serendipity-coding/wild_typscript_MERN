@@ -16,7 +16,7 @@ router.get("/", wilderController.findAll);
 // @route    GET api/wilders/:id
 // @desc     Get wilder by ID
 // @access   Ublic
-// router.get("/:id", wilderController.findOne);
+router.get("/:id", wilderController.findOne);
 
 // @route    PUT api/wilders/
 // @desc     Update wilder by ID

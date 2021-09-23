@@ -1,0 +1,245 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+/* 
+ * global. css 
+ */
+ body {
+    margin: 0;
+    font-family: Quicksand;
+  }
+  
+  h1, h2, h3 {
+    margin: 0 0 0.35em;
+  }
+  
+  h1 {
+    font-size: 40px;
+    color:#F76C6C
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  h4 {
+    font-size: 15px;
+  }
+  
+  p {
+    margin: 0 0 1.15em;
+  }
+  
+  .container {
+    max-width: 800px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-title{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  
+  .navbar {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .navbar h1 {
+    color: #F76C6C;
+  }
+  .navbar .links {
+    margin-left: auto;
+  }
+  .navbar a {
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
+  }
+  .navbar a:hover {
+    color: #F76C6C;
+  }
+  
+  footer {
+    border-top: 2px solid #F76C6C;
+  }
+  
+  /* 
+   * card-layout. css 
+   */
+  .card-row {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    justify-content: space-between;
+  }
+  
+  .card {
+    padding: 20px;
+    border: 1px solid #c9c9c9;
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .wilder-profile a {
+    text-decoration: none;
+  }
+  
+  .card > img:first-child {
+    border-radius: 7px 7px 0 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card h3, .card h4{
+    color: #F76C6C;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+  }
+  
+  .card h3 em {
+    padding: 0.25em;
+    background-color: #eddbff;
+    border-radius: 4px;
+  }
+  
+  .card p, .card ul {
+    color: #757575;
+    line-height: 1.5;
+  }
+  .skills-list{
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  .button {
+    /* Reset text link default */
+    text-decoration: none;
+    background-color: #F76C6C;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  
+  .card .skills {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card .skills li {
+    margin: 4px 0;
+    display: flex;
+    justify-content: space-around;
+    border: #F76C6C 1px solid;
+    border-radius: 4px;
+    padding: 2px;
+  }
+  
+  .card .skills .votes {
+     /* Center the content */
+     align-items: center;
+     display: flex;
+     justify-content: center;
+  
+     /* Colors */
+     background-color: rgba(0, 0, 0, .3);
+     color: #FFF;
+  
+     /* Rounded border */
+     border-radius: 9999px;
+     height: 20px;
+     width: 20px; 
+  }
+
+  /* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #F76C6C;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #F76C6C;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.feedback {
+  display: block;
+  color: #F76C6C;
+  font-weight: 600;
+}
+
+.wilder-details button {
+  background: #F76C6C;
+  height: 30px;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 70px;
+}
+
+/* not found */
+.not-found{
+  display: flex;
+  flex-direction: column;
+}
+.not-found img{
+  height: 250px;
+  width: 250px;
+  margin-bottom: 50px;
+}
+
+.profile-pic{
+  max-width: 200px;
+  max-height: 200px;
+}

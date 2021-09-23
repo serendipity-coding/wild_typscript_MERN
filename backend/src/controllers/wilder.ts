@@ -23,6 +23,21 @@ const wilderController = {
       });
     }
   },
+  findOne: (req: Request, res: Response) => {
+    const id = req.params.id;
+    WilderModel.findById(id)
+      .then(data => {
+        if (!data)
+          res.status(404).send({ message: "Not found wilder with id " + id });
+        else res.send(data);
+      })
+      .catch(err => {
+        res
+          .status(500)
+          .send({ message: "Error retrieving wilder with id=" + id });
+      });
+  },
+
   findAll: async (req: Request, res: Response): Promise<void> => {
     try {
       const result = await WilderModel.find();
